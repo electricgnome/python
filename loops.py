@@ -24,19 +24,6 @@ n = int(input("How big of a square?"))
 for i in range(n):
     print("*"*n)
 
-#exercise 6: print a box
-n= int(input("height:"))
-m= int(input("width:"))
-
-for i in range(n):
-
-
-#exercise 7: triangle
-x=0
-for i in range(7):
-    x=+ i+i
-    print ("*"*x)
-
 #Exercise 6: print a box
 x=int(input("width:"))
 y=int(input("hieght:"))
@@ -48,7 +35,7 @@ for i in range(y):
         print ("X" +" "*(x-2) +"X")
 
 
-#exercise 7: print triangle
+#exercise 7/8: print triangle
 def triangle(i, t=0):
     if i==0:
         return 0
@@ -85,7 +72,7 @@ for i in range(0,3):
         print ("*"+text+"*")
 
 
-#exercise 11: triangle numbs
+#exercise 11: triangle numbs --unfinished
 for i in range(1,100):
     print ((i*(i+1))//2)
 
