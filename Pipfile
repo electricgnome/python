@@ -9,6 +9,7 @@ name = "pypi"
 
 ipython = "*"
 tornado = "*"
+matplotlib = "*"
 
 
 [dev-packages]
