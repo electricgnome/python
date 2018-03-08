@@ -25,9 +25,9 @@ if __name__=="__main__":
         try:
 
             shape = input("what would you like to draw:")
-            size = input("What size:")
+            size = int(input("What size:"))
             color = input("What color:")
-            fill = input("Fill Y/n:")
+            fill = bool(input("Fill Y/n:"))
             shapes.shapeIndex[shape](size, color, fill)
         except KeyError:
             print("Please try again")
