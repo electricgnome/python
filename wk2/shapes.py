@@ -1,7 +1,7 @@
 from turtle import*
 
 setup()
-title("Turtle Test")
+title("Shapes")
 clear()
 width(3)
 pencolor("green")
@@ -48,9 +48,6 @@ def triangle(sz, clr, fl):
 
     end_fill()
     ht()
-
-
-
 
 # square
 def square(sz, clr, fl):
