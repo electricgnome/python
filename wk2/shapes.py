@@ -114,7 +114,7 @@ def crcl(sz, clr, fl):
         fillcolor(clr)
         begin_fill()
 
-    fillcolor(clr)
+    
     circle(100)
     end_fill()
     ht()
