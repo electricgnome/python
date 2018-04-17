@@ -111,7 +111,7 @@ function encode(msg, m){
         //Lower
         }else if (msg.charCodeAt(i) >= 97 && msg.charCodeAt(i) <=122){
             code = String.fromCharCode(((msg.charCodeAt(i) -97 + m) % 26) +97);
-        
+        l
         }else{
             code = msg[i]
         }
@@ -121,3 +121,73 @@ function encode(msg, m){
 }
 
 
+// =========================== Function Exercises =======================================================
+
+var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+// ====
+arr.filter(x => x % 2==0)
+// ====
+arr2 = arr.map(x => x*x)
+// ====
+var cities = [
+    { name: 'Los Angeles', temperature: 60.0},
+    {name:'Atlanta', temperature:52.0},
+    {name:'Detroit', temperature:48.0},
+    {name:'New York', temperature:80.0},
+]
+
+var coolCity = cities.filter(function(city){
+    return city.temperature < 70.0
+})
+// =====
+var people = [
+    'Dom',
+    'Lyn',
+    'Kirk',
+    'Autumn',
+    'Trista',
+    'Jesslyn',
+    'Kevin',
+    'John',
+    'Eli',
+    'Juan',
+    'Robert',
+    'Keyur',
+    'Jason',
+    'Che',
+    'Ben'
+  ];
+
+  people.map(function(x){
+     return('Good job, ' + x + '!' )
+  })
+// =====
+
+people.sort()
+// =====
+people.sort(function(a,b){
+  return a.length - b.length;
+})
+// =====
+var fun = function(){
+    // console.log("Fun!!")
+    return 'Fun!!';
+}
+
+function callnTimes(fn, n){
+    for (let i=0;i<n;i++){
+        console.log(fn());
+    }
+    return;
+}
+// =====
+function sum(n){
+    reducer = (accumulator, currentValue) => accumulator + currentValue;
+    console.log(n.reduce(reducer));
+}
+// =====
+var vip = ['ver', 'imp', 'per']
+function accron(n){
+    reducer = (accumulator, currentValue) => accumulator + currentValue;
+    console.log(n.reduce(reducer));
+}
