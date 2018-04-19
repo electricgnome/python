@@ -185,9 +185,24 @@ function sum(n){
     reducer = (accumulator, currentValue) => accumulator + currentValue;
     console.log(n.reduce(reducer));
 }
-// =====
+// =====Acronym
 var vip = ['ver', 'imp', 'per']
-function accron(n){
-    reducer = (accumulator, currentValue) => accumulator + currentValue;
-    console.log(n.reduce(reducer));
+function accron(arr){
+    
+    console.log(arr.reduce(
+        function(accumulator, currentValue){
+            return accumulator + currentValue[0][0].toUpperCase()
+        }, 
+        ''
+    ))
+ 
 }
+// ====
+
+var phonebookDict = {
+    Alice: '703-493-1834',
+    Bob: '857-384-1234',
+    Elizabeth: '484-584-2923'
+  }
+
+  
